@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+
+// public에 images폴더를 안 넣고 src에 있을 경우
+// import logo for '../src/images/logo.png';
+// 하단 <App/>에 불러주고
+// 이렇게 불러서 쓰는건 어쩌다 한번이지 모든 이미지를 이렇게 부를 순 없다.
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
